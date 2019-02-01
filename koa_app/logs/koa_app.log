@@ -1,0 +1,24 @@
+[2019-02-02T00:29:53.444] [ERROR] koa_app - 11111111111111
+[2019-02-02T00:31:18.286] [ERROR] koa_app - 11111111111111
+[2019-02-02T00:31:18.288] [ERROR] koa_app - 2222222222
+[2019-02-02T00:31:47.835] [ERROR] koa_app - 11111111111111
+[2019-02-02T00:31:47.835] [ERROR] koa_app - 2222222222
+[2019-02-02T00:33:30.001] [ERROR] koa_app - 11111111111111
+[2019-02-02T00:33:30.003] [ERROR] koa_app - 2222222222
+[2019-02-02T00:33:44.586] [ERROR] koa_app - 11111111111111
+[2019-02-02T00:33:44.586] [ERROR] koa_app - 2222222222
+[2019-02-02T00:44:40.869] [ERROR] koa_app - Error: next() called multiple times
+    at dispatch (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-compose@4.1.0@koa-compose\index.js:36:45)
+    at app.use (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\middlewares\errorHandler.js:8:23)
+    at <anonymous>
+[2019-02-02T00:46:49.098] [ERROR] koa_app - TypeError: init is not a function
+    at C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\controllers\IndexController.js:8:13
+    at dispatch (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:186:18)
+    at Router._lookup (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:198:12)
+    at C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:138:21
+    at dispatch (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at app.use (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\middlewares\errorHandler.js:16:19)
+    at dispatch (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at app.use (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\middlewares\errorHandler.js:6:23)
+    at dispatch (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at serve (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-static@5.0.0@koa-static\index.js:53:15)

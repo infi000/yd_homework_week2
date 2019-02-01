@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{title}}</title>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/index.css">
-</head>
-<body>
+{% extends './layout.html' %}
+{% block title %}新闻系统{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/styles/index.css">
+{% endblock %}
+{% block content %}
+{% include './components/news/list.html' %}
+{{data}}
+<div id="app"></div>
 
-    <div class="wrap">
-        
-
-              {% include "./widget/nav.html" %}
-  {{content}}
-
-    </div>
-
-    {% include "./widget/footer.html" %}
-</body>
-</html>
+{% endblock %}
+{% block scripts %}
+<script src="/scripts/index.js "></script>
+{% endblock %}
