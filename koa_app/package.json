@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development supervisor app.js "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "co": "^4.6.0",
+    "cross-env": "^5.2.0",
     "koa": "^2.7.0",
     "koa-convert": "^1.2.0",
     "koa-simple-router": "^0.2.0",
