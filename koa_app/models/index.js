@@ -1,3 +1,6 @@
+const SafeRequest = require("../utils/SafeRequest.js");
+
+
 /**
  *  @fileoverview 实现Index的数据模型
  *  @author infi000
@@ -28,8 +31,10 @@ class Index {
      * getData(opt)
      */
     getData(opt) {
-        return {};
+        let safeRequest = new SafeRequest("book/index");
+            return safeRequest.fetch();
+
     }
 }
 
-module.exports=Index;
+module.exports = Index;

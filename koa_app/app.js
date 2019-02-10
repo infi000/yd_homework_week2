@@ -18,7 +18,7 @@ const config=require("./config")
  app.context.render = co.wrap(render({
      root: path.join(config.viewDir),
      autoescape: true,
-     cache: 'memory', // disable, set to false
+     cache: config.catchMode, // 浏览器缓存 在开发阶段设置false(因为要经常修改前端页面) 上线后为memory 
      ext: 'html',
      writeBody: false
  }));

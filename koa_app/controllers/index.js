@@ -7,7 +7,8 @@ const testController=new TestController();
 module.exports = (app) => {
     app.use(router(_ => {
         _.get('/', indexController.actonIndex());
-        _.get('/index.html', testController.actonIndex());//伪静态 防止爬虫抓数据抓不到
+        _.get('/index.html', indexController.actonIndex());//伪静态 防止爬虫抓数据抓不到
+        _.get('/add', indexController.addIndex());//添加书信息
         _.get('/test', testController.actonIndex());
     }))
 }

@@ -7,6 +7,8 @@ let config = {
 
 if (process.env.NODE_ENV == "development") {
     const localConfig = {
+        baseUrl:"http://localhost/web/index.php?r=",
+        catchMode:false,
         port: 3000
     }
     config = _.extend(config, localConfig);
@@ -14,6 +16,7 @@ if (process.env.NODE_ENV == "development") {
 
 if (process.env.NODE_ENV == "production") {
     const prodConfig = {
+        catchMode:"memory",
         port: 8081
     }
     config = _.extend(config, prodConfig);

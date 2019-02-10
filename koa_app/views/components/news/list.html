@@ -1,7 +1,28 @@
-<ul>
+<div class="list">
     
-    <li>d</li>
-    <li>d</li>
-    <li>d</li>
-    <li>d</li>
-</ul>
+
+    <table class="table">
+        
+    <tr>
+        <th>编号</th>
+        <th>书名</th>
+        <th>描述</th>
+        <th>价格</th>
+        <th>作者</th>
+        <th>出版社</th>
+        <th>出版时间</th>
+    </tr>
+    {% for item in data %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.desc}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.author}}</td>
+        <td>{{item.from}}</td>
+        <td>{{item.date}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+</div>
