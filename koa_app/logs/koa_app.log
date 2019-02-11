@@ -22,3 +22,134 @@
     at app.use (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\middlewares\errorHandler.js:6:23)
     at dispatch (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
     at serve (C:\Users\Administrator\Desktop\hotdoc\yidengroot\homework\week2\koa_app\node_modules\_koa-static@5.0.0@koa-static\index.js:53:15)
+[2019-02-11T11:33:24.802] [ERROR] koa_app - { data: {}, message: 'tetch error', code: 1 }
+[2019-02-11T11:36:45.120] [ERROR] koa_app - { data: {}, message: 'tetch error', code: 1 }
+[2019-02-11T11:38:37.472] [ERROR] koa_app - { data: {}, message: 'tetch error', code: 1 }
+[2019-02-11T11:39:54.728] [ERROR] koa_app - { data: {}, message: 'tetch error', code: 1 }
+[2019-02-11T11:41:04.047] [ERROR] koa_app - { data: {}, message: 'tetch error', code: 1 }
+[2019-02-11T11:43:18.260] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:05:23.035] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:05:28.531] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:05:59.348] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:06:08.246] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:09:57.532] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:11:42.638] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:18:26.990] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:25:25.061] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'tetch error',
+  code: 1 }
+[2019-02-11T14:29:37.249] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'fetch error',
+  code: 1 }
+[2019-02-11T14:30:36.888] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'fetch error',
+  code: 1 }
+[2019-02-11T14:31:05.342] [ERROR] koa_app - TypeError: Cannot read property 'params' of undefined
+    at SafeRquest.fetch (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\utils\SafeRequest.js:12:17)
+    at Index.getData (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\models\index.js:36:28)
+    at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\controllers\IndexController.js:11:35
+    at dispatch (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:186:18)
+    at Router._lookup (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:198:12)
+    at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_koa-simple-router@0.2.0@koa-simple-router\index.js:138:21
+    at dispatch (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at app.use (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\middlewares\errorHandler.js:16:19)
+    at dispatch (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at app.use (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\middlewares\errorHandler.js:6:23)
+[2019-02-11T14:33:03.795] [ERROR] koa_app - { data:
+   TypeError: body used already for: http://localhost/web/index.php?r=book/index
+       at Response.consumeBody (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:313:30)
+       at Response.json (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:237:22)
+       at ydfetch.then (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\utils\SafeRequest.js:28:32)
+       at process._tickCallback (internal/process/next_tick.js:68:7),
+  message: 'fetch error',
+  code: 1 }
+[2019-02-11T14:35:10.647] [ERROR] koa_app - { data:
+   TypeError: body used already for: http://localhost/web/index.php?r=book/index
+       at Response.consumeBody (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:313:30)
+       at Response.json (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:237:22)
+       at ydfetch.then (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\utils\SafeRequest.js:28:32)
+       at process._tickCallback (internal/process/next_tick.js:68:7),
+  message: 'fetch error',
+  code: 1 }

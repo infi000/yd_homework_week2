@@ -1,12 +1,12 @@
-class Create{
-    constructor(){
-        this.btn=$("#js-btn");
+class Create {
+    constructor() {
+        this.btn = $("#js-btn");
     }
-    fn(){
-        this.btn.click(function (argument) {
+    fn() {
+        this.btn.click(yd.throttle(function() {
             console.log(1)
-        })
+        }, 1000));
     }
 }
 
-export  default Create;
+export default Create;

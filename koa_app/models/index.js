@@ -1,6 +1,5 @@
 const SafeRequest = require("../utils/SafeRequest.js");
 
-
 /**
  *  @fileoverview 实现Index的数据模型
  *  @author infi000
@@ -31,9 +30,30 @@ class Index {
      * getData(opt)
      */
     getData(opt) {
-        let safeRequest = new SafeRequest("book/index");
-            return safeRequest.fetch();
 
+        let safeRequest = new SafeRequest("book/index");
+
+        return safeRequest.fetch();
+
+    }
+    /**
+     * 把前端给的书籍信息上传给接口
+     *
+     * @param  {[obj]} opt [配置项]
+     *
+     * @return {[obj]}     [description]
+     *
+     * @example
+     * return new Promise
+     * getData(opt)
+     */
+    saveData(opt) {
+
+        let safeRequest = new SafeRequest("book/create");
+        return safeRequest.fetch({
+            method:"POST",
+            params:opt.params
+        });
     }
 }
 

@@ -1,8 +1,14 @@
 function yd(argument) {
     // body...
 }
-
+/**
+ * [throttle description]
+ * @param  {Function} fn   [执行的方法]
+ * @param  {[type]}   wait [等待时间 MS]
+ * @return {[type]}        [description]
+ */
 yd.throttle = function(fn, wait) {
+    //防抖
     var timer;
     return function(...args) {
         if (!timer) {
@@ -13,14 +19,3 @@ yd.throttle = function(fn, wait) {
 }
 
 
-var foo=function (fn){
-
-    return function (...args){
-        return fn(args)
-    }
-}
-
-
-function test(n){
-    console.log(n)
-}

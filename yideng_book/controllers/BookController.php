@@ -69,15 +69,23 @@ class BookController extends Controller
      */
     public function actionCreate()
     {
+        $result = array("code"=>0,"message"=>"");
         $model = new Book();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            // return $this->redirect(['view', 'id' => $model->id]);
+
+            $result["message"] = "ok";
+        }else{
+            $result["message"] = "no";
+            $result["code"] = "1";
         }
 
-        return $this->render('create', [
-            'model' => $model,
-        ]);
+        YII::$app->response->format=Response::FORMAT_JSON;
+        return $result;
+        // return $this->render('create', [
+        //     'model' => $model,
+        // ]);
     }
 
     /**

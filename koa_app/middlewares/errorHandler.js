@@ -5,7 +5,7 @@ const errorHandler = {
             try {
                 await next();
             } catch (err) {
-                console.log(err)
+                console.log("cuowu xinxi ",err)
                 logger.error(err);
                 ctx.status = 500;
                 ctx.body = err;
