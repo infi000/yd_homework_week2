@@ -15,6 +15,8 @@ use yii\web\Response;
  */
 class BookController extends Controller
 {
+    //关闭csrf 提供node处理
+    public $enableCsrfValidation = false;
     /**
      * {@inheritdoc}
      */

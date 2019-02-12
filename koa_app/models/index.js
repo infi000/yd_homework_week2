@@ -48,7 +48,6 @@ class Index {
      * getData(opt)
      */
     saveData(opt) {
-
         let safeRequest = new SafeRequest("book/create");
         return safeRequest.fetch({
             method:"POST",

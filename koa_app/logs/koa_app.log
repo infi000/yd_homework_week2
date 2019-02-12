@@ -153,3 +153,65 @@
        at process._tickCallback (internal/process/next_tick.js:68:7),
   message: 'fetch error',
   code: 1 }
+[2019-02-12T15:48:30.481] [ERROR] koa_app - { data:
+   TypeError: body used already for: http://localhost/web/index.php?r=book/index
+       at Response.consumeBody (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:313:30)
+       at Response.json (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:237:22)
+       at ydfetch.then (C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\utils\SafeRequest.js:37:32)
+       at process._tickCallback (internal/process/next_tick.js:68:7),
+  message: 'fetch error',
+  code: 1 }
+[2019-02-12T16:05:28.395] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'fetch error',
+  code: 1 }
+[2019-02-12T16:05:28.455] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'fetch error',
+  code: 1 }
+[2019-02-12T16:06:49.177] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'fetch error',
+  code: 1 }
+[2019-02-12T16:07:01.861] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'fetch error',
+  code: 1 }
+[2019-02-12T16:14:24.457] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'fetch error',
+  code: 1 }
+[2019-02-12T16:20:39.126] [ERROR] koa_app - { data:
+   { FetchError: invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0
+       at C:\Users\USER\Desktop\hotdoc\yd_homework_week2\koa_app\node_modules\_node-fetch@2.3.0@node-fetch\lib\index.js:241:32
+       at process._tickCallback (internal/process/next_tick.js:68:7)
+     message:
+      'invalid json response body at http://localhost/web/index.php?r=book/create reason: Unexpected token < in JSON at position 0',
+     type: 'invalid-json' },
+  message: 'fetch error',
+  code: 1 }

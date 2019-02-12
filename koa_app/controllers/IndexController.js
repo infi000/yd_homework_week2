@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
 const Index = require("../models/index.js");
-const {URLSearchParams} =require('url');
+const { URLSearchParams } = require('url');
 class IndexController {
     constructor() {}
     actionIndex() {
@@ -9,11 +9,11 @@ class IndexController {
         return async(ctx, next) => {
             let index = new Index();
             let res = await index.getData();
-      ctx.body = res;
-            
-            // ctx.body = await ctx.render('index', {
-            //     data: res.data
-            // });
+            // ctx.body = res;
+
+            ctx.body = await ctx.render('index', {
+                data: res
+            });
         }
     }
     actionAdd() {
@@ -25,17 +25,13 @@ class IndexController {
     actionSave() {
 
         return async(ctx, next) => {
-            const index = new Index();
-            var params = new URLSearchParams();
-            params.append("Book[name]", "test");
-            params.append("Book[desc]", "testtesttest");
 
+            const index = new Index();
+            const url = ctx.querystring;
+            const params = new URLSearchParams(url);
             const res = await index.saveData({ params });
             ctx.body = res;
-
         }
-
-
     }
 
 }

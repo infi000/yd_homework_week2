@@ -23,20 +23,11 @@ class SafeRquest {
             }
             ydfetch
                 .then((res) => {
-                    // console.log(res);
- 
-                    // console.log(res.json());
                     return res.json();
-
                 })
                 .then((json) => {
-                    // console.log(json);
-                    // return 
-                    // console.log("json", json)
-                    // result.data = json;
                     resolve(json);
                 }).catch((err) => {
-
                     result.code = 1;
                     result.data = err;
                     result.message = "fetch error";

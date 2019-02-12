@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+
+            var params = new URLSearchParams();
+            // params.append("_csrf", "fbt0Gtyb7nzv0TnJ_h22Me5VrCOUTZiu1LYJTOU-bNgk-hBev8yNLYzlUqufU8J1izbmdKU_1OWzhk4FyFtZhw==");
+            params.append("Book[name]", "14");
+            params.append("Book[price]", "13");
+            // params.append("Book[desc]", "13");
+            // params.append("Book[author]", "13");
+            // params.append("Book[date]", "13");
+            // params.append("Book[from]", "13");
+
+
+fetch("web/index.php?r=book/create",{
+    method:"POST",
+    body:params
+}).then((res)=>{
+    return res.json()
+}).then((res)=>{
+
+})
+    </script>
+</body>
+</html>
