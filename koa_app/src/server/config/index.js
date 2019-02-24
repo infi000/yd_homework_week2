@@ -1,9 +1,13 @@
-const { join } = require("path");
-const _ = require("lodash");
+// const { join } = require("path");
+// const _ = require("lodash");
+
+import  { join } from "path";
+import _ from "lodash";
 let config = {
     "viewDir": join(__dirname, "..", "views"),
     "staticDir": join(__dirname, "..", "assets"),
 }
+
 
 if (process.env.NODE_ENV == "development") {
     const localConfig = {
