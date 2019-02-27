@@ -66,9 +66,6 @@ function buildlint() {
 }
 
 
-
-
-
 //serires序列化任务 
 let build = gulp.series(builddev);
 if (process.env.NODE_ENV == "production") {
