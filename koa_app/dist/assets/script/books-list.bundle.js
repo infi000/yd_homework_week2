@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/web/components/list/list.css":
+/*!******************************************!*\
+  !*** ./src/web/components/list/list.css ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/web/components/list/list.css?");
+
+/***/ }),
+
 /***/ "./src/web/components/list/list.js":
 /*!*****************************************!*\
   !*** ./src/web/components/list/list.js ***!
@@ -94,7 +105,30 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/*jshint esversion: 6 */\r\n\r\nclass list {\r\n    init() {\r\n        console.log(\"组建对应的入口文件\")\r\n    }\r\n\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (list);\n\n//# sourceURL=webpack:///./src/web/components/list/list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _list_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list.css */ \"./src/web/components/list/list.css\");\n/* harmony import */ var _list_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_list_css__WEBPACK_IMPORTED_MODULE_0__);\n/*jshint esversion: 6 */\n\nconst list ={\n    init() {\n        console.log(\"组建对应的入口文件\")\n    }\n\n}\n/* harmony default export */ __webpack_exports__[\"default\"] = (list);\n\n//# sourceURL=webpack:///./src/web/components/list/list.js?");
+
+/***/ }),
+
+/***/ "./src/web/components/navigation/navigation.css":
+/*!******************************************************!*\
+  !*** ./src/web/components/navigation/navigation.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/web/components/navigation/navigation.css?");
+
+/***/ }),
+
+/***/ "./src/web/components/navigation/navigation.js":
+/*!*****************************************************!*\
+  !*** ./src/web/components/navigation/navigation.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navigation_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navigation.css */ \"./src/web/components/navigation/navigation.css\");\n/* harmony import */ var _navigation_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navigation_css__WEBPACK_IMPORTED_MODULE_0__);\n\nconst navigation ={\n    init() {\n        console.log(\"navigation组建对应的入口文件\")\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (navigation);\n\n//# sourceURL=webpack:///./src/web/components/navigation/navigation.js?");
 
 /***/ }),
 
@@ -106,7 +140,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/*jshint esversion: 6 */\r\n\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_list_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/list/list.js */ \"./src/web/components/list/list.js\");\n\r\n\r\n\r\n_components_list_list_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/web/views/books/books-list.entry.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_list_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/list/list.js */ \"./src/web/components/list/list.js\");\n/* harmony import */ var _components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/navigation/navigation.js */ \"./src/web/components/navigation/navigation.js\");\n\n\n\n_components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n\n_components_list_list_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/web/views/books/books-list.entry.js?");
 
 /***/ })
 

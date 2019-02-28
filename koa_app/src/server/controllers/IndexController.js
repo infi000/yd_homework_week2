@@ -11,7 +11,7 @@ class IndexController {
             let res = await index.getData();
             // ctx.body = res;
 
-            ctx.body = await ctx.render('index', {
+            ctx.body = await ctx.render('books/pages/list.html', {
                 data: res
             });
         }
@@ -19,7 +19,7 @@ class IndexController {
     actionAdd() {
 
         return async(ctx, next) => {
-            ctx.body = await ctx.render('add', {});
+            ctx.body = await ctx.render('books/pages/add.html', {});
         }
     }
     actionSave() {

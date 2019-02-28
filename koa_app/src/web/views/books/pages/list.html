@@ -1,16 +1,17 @@
-{% extends 'page:/common/layout.html' %}
+{% extends 'page:common/layout.html' %}
 {% block title %}新闻系统{% endblock %}
 {% block head %}
-<link rel="stylesheet" href="/styles/common.css">
 <!-- injectcss -->
 {% endblock %}
+{% block navigation %}
+{% include 'components:common/navigation.html' %}
+{% endblock %}
 {% block content %}
-{% include 'components:/list/list.html' %}
+{% include 'components:list/list.html' %}
 
 <!-- <div id="app"></div> -->
 
 {% endblock %}
 {% block scripts %}
 <!-- injectjs -->
-<script src="/scripts/index.js "></script>
 {% endblock %}

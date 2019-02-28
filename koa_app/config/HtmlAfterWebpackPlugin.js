@@ -16,9 +16,10 @@ const assetsHelp = (data) => {
     // }
 
     var js = data.js.map((d) => `<script src=${d}></script>`);
-
+    var css = data.css.map((d) => `<link href=${d}`);
+    
     return {
-        js
+        js,css
     }
 };
 class HtmlAfterWebpackPlugin {
@@ -28,9 +29,10 @@ class HtmlAfterWebpackPlugin {
 
                 var res = assetsHelp(htmlPluginDate.assets);
                 var html = htmlPluginDate.html;
-                html = html.replace('page:', '../..'); //配置路径别名
-                html = html.replace('components:', '../../../components'); //配置路径别名
+                html = html.replace(/page:/g, '../../'); //配置路径别名
+                html = html.replace(/components:/g, '../../../components/'); //配置路径别名
                 html = html.replace('<!-- injectjs -->', res.js.join("")); //将injectjs替换为script
+                html = html.replace('<!-- injectcss -->', res.css.join("")); //将injectcss替换为link
                 htmlPluginDate.html = html;
 
             })

@@ -16,7 +16,7 @@ function builddev() {
             .pipe(babel({
                 babelrc: false, //将.babelrc配置文件绕过，用当下的配置
                 "plugins": [
-                    ["transform-es2015-modules-systemjs"]
+                    ["transform-es2015-modules-commonjs"]
                 ]
 
             }))
@@ -32,7 +32,7 @@ function buildprod() {
             babelrc: false, //将.babelrc配置文件绕过，用当下的配置
             ignore: ["./src/server/config/*.js"],
             plugins: [
-                ["transform-es2015-modules-systemjs"]
+                ["transform-es2015-modules-commonjs"]
             ]
 
         }))

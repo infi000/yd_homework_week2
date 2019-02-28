@@ -1,5 +1,5 @@
- // const Koa = require("koa");
- import  Koa  from "koa";
+ const Koa = require("koa");
+//  import  Koa  from "koa";
  var render = require('koa-swig');
  const path = require("path");
  const serve = require('koa-static');
@@ -19,7 +19,7 @@ const config=require("./config")
  app.context.render = co.wrap(render({
      root: path.join(config.viewDir),
      autoescape: true,
-     cache: config.catchMode, // 浏览器缓存 在开发阶段设置false(因为要经常修改前端页面) 上线后为memory 
+     cache: config.cacheMode, // 浏览器缓存 在开发阶段设置false(因为要经常修改前端页面) 上线后为memory 
      ext: 'html',
      writeBody: false
  }));

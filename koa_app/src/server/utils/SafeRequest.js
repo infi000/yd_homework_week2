@@ -30,7 +30,7 @@ class SafeRquest {
                 }).catch((err) => {
                     result.code = 1;
                     result.data = err;
-                    result.message = "fetch error";
+                    result.message = "fetch error！NODE和后端通信异常";
                     reject(result);
                 })
         })

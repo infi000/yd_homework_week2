@@ -1,52 +1,45 @@
-System.register([], function (_export, _context) {
-  "use strict";
+"use strict";
 
-  return {
-    setters: [],
-    execute: function () {
-      /*jshint esversion: 6 */
-      const Index = require("../models/index.js");
+/*jshint esversion: 6 */
+const Index = require("../models/index.js");
 
-      const {
-        URLSearchParams
-      } = require('url');
+const {
+  URLSearchParams
+} = require('url');
 
-      class IndexController {
-        constructor() {}
+class IndexController {
+  constructor() {}
 
-        actionIndex() {
-          //这里retrun 没看懂 看教程是要求 async函数
-          return async (ctx, next) => {
-            let index = new Index();
-            let res = await index.getData(); // ctx.body = res;
+  actionIndex() {
+    //这里retrun 没看懂 看教程是要求 async函数
+    return async (ctx, next) => {
+      let index = new Index();
+      let res = await index.getData(); // ctx.body = res;
 
-            ctx.body = await ctx.render('index', {
-              data: res
-            });
-          };
-        }
+      ctx.body = await ctx.render('books/pages/list.html', {
+        data: res
+      });
+    };
+  }
 
-        actionAdd() {
-          return async (ctx, next) => {
-            ctx.body = await ctx.render('add', {});
-          };
-        }
+  actionAdd() {
+    return async (ctx, next) => {
+      ctx.body = await ctx.render('books/pages/add.html', {});
+    };
+  }
 
-        actionSave() {
-          return async (ctx, next) => {
-            const index = new Index();
-            const url = ctx.querystring;
-            const params = new URLSearchParams(url);
-            const res = await index.saveData({
-              params
-            });
-            ctx.body = res;
-          };
-        }
+  actionSave() {
+    return async (ctx, next) => {
+      const index = new Index();
+      const url = ctx.querystring;
+      const params = new URLSearchParams(url);
+      const res = await index.saveData({
+        params
+      });
+      ctx.body = res;
+    };
+  }
 
-      }
+}
 
-      module.exports = IndexController;
-    }
-  };
-});
+module.exports = IndexController;

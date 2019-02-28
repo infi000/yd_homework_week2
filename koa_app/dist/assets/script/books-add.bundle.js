@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/web/components/add/add.css":
+/*!****************************************!*\
+  !*** ./src/web/components/add/add.css ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/web/components/add/add.css?");
+
+/***/ }),
+
 /***/ "./src/web/components/add/add.js":
 /*!***************************************!*\
   !*** ./src/web/components/add/add.js ***!
@@ -94,7 +105,30 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass add {\r\n    init() {\r\n        console.log(\"add组建对应的入口文件\")\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (add);\n\n//# sourceURL=webpack:///./src/web/components/add/add.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _add_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add.css */ \"./src/web/components/add/add.css\");\n/* harmony import */ var _add_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_add_css__WEBPACK_IMPORTED_MODULE_0__);\n\nconst add = {\n    init() {\n        console.log(\"add组建对应的入口文件\")\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (add);\n\n//# sourceURL=webpack:///./src/web/components/add/add.js?");
+
+/***/ }),
+
+/***/ "./src/web/components/navigation/navigation.css":
+/*!******************************************************!*\
+  !*** ./src/web/components/navigation/navigation.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/web/components/navigation/navigation.css?");
+
+/***/ }),
+
+/***/ "./src/web/components/navigation/navigation.js":
+/*!*****************************************************!*\
+  !*** ./src/web/components/navigation/navigation.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navigation_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navigation.css */ \"./src/web/components/navigation/navigation.css\");\n/* harmony import */ var _navigation_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navigation_css__WEBPACK_IMPORTED_MODULE_0__);\n\nconst navigation ={\n    init() {\n        console.log(\"navigation组建对应的入口文件\")\n    }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (navigation);\n\n//# sourceURL=webpack:///./src/web/components/navigation/navigation.js?");
 
 /***/ }),
 
@@ -106,7 +140,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nclass add {\r\n    init() {\r
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_add_add_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/add/add.js */ \"./src/web/components/add/add.js\");\n\r\n\r\n\r\n_components_add_add_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/web/views/books/books-add.entry.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_add_add_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/add/add.js */ \"./src/web/components/add/add.js\");\n/* harmony import */ var _components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/navigation/navigation.js */ \"./src/web/components/navigation/navigation.js\");\n\n\n\n_components_add_add_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_navigation_navigation_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/web/views/books/books-add.entry.js?");
 
 /***/ })
 

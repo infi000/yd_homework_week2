@@ -1,17 +1,22 @@
-{% extends 'page:/common/layout.html' %}
+{% extends 'page:common/layout.html' %}
 {% block title %}添加书信息{% endblock %}
 {% block head %}
-<!-- <link rel="stylesheet" href="/styles/common.css"> -->
 <!-- injectcss -->
 {% endblock %}
+
+
+{% block navigation %}
+{% include 'components:common/navigation.html' %}
+
+{% endblock %}
 {% block content %}
-{% include 'components:/add/add.html' %}
+{% include 'components:add/add.html' %}
 <!-- <div id="app"></div> -->
 {% endblock %}
 {% block scripts %}
-    <!-- injectjs -->
+<!-- injectjs -->
 
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script type="module">
     // type="module" 判断是或可以模块话加载
         import("/scripts/add.js").then((_)=>{
@@ -19,9 +24,9 @@
          create.fn();
         })
 
-</script>
+</script> -->
 <!--babel编译以后 还是会由于export导致浏览器报错 这时候引入非常重要的万能模块加载器 -->
-<script type="nomodule" src="https://cdn.bootcss.com/systemjs/3.0.0/system.min.js"></script>
+<!-- <script type="nomodule" src="https://cdn.bootcss.com/systemjs/3.0.0/system.min.js"></script>
 <script type="nomodule">
     //这里直接用system.js还是会报错，需要再装一个babel的插件 "@babel/plugin-transform-modules-systemjs" ，用来让babel支持编译system.js
     
@@ -29,7 +34,5 @@
          var create= new _.default;
          create.fn();
         })
-</script>
-<!-- <script type="module" src="/scripts/add-bundle.js"></script> -->
-<!-- <script src="/scripts/add.js "></script> -->
+</script> -->
 {% endblock %}

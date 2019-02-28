@@ -1,8 +1,8 @@
-// const { join } = require("path");
-// const _ = require("lodash");
+const { join } = require("path");
+const _ = require("lodash");
 
-import  { join } from "path";
-import _ from "lodash";
+// import  { join } from "path";
+// import _ from "lodash";
 let config = {
     "viewDir": join(__dirname, "..", "views"),
     "staticDir": join(__dirname, "..", "assets"),
@@ -11,8 +11,8 @@ let config = {
 
 if (process.env.NODE_ENV == "development") {
     const localConfig = {
-        baseUrl:"http://localhost/web/index.php?r=",
-        catchMode:false,
+        baseUrl:"http://127.0.0.1:8080/yideng_book/web/index.php?r=",
+        cacheMode:false,
         port: 3000
     }
     config = _.extend(config, localConfig);
@@ -20,7 +20,7 @@ if (process.env.NODE_ENV == "development") {
 
 if (process.env.NODE_ENV == "production") {
     const prodConfig = {
-        catchMode:"memory",
+        cacheMode:"memory",
         port: 8081
     }
     config = _.extend(config, prodConfig);

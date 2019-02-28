@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     new CopyPlugin([{
         from: join(__dirname, "../src/web/views/common/layout.html"),
-        to: join(__dirname, "../dist/views/books/common")
+        to: join(__dirname, "../dist/views/common")
       },
       {
         from: join(__dirname, "../src/web/components"),
