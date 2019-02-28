@@ -9,7 +9,9 @@ const entry = "./src/server/**/*.js"
 //env dev
 
 function builddev() {
-    return watch(entry, { ignoreInitial: false }, function() {
+    return watch(entry, {
+        ignoreInitial: false
+    }, function () {
         gulp.src(entry)
             .pipe(babel({
                 babelrc: false, //将.babelrc配置文件绕过，用当下的配置
@@ -29,7 +31,7 @@ function buildprod() {
         .pipe(babel({
             babelrc: false, //将.babelrc配置文件绕过，用当下的配置
             ignore: ["./src/server/config/*.js"],
-            plugins: [ 
+            plugins: [
                 ["transform-es2015-modules-systemjs"]
             ]
 
@@ -59,7 +61,7 @@ function buildconfig() {
 
 //对代码进行检查的环境
 function buildlint() {
- return gulp.src(entry) 
+    return gulp.src(entry)
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
@@ -77,3 +79,6 @@ if (process.env.NODE_ENV == "lint") {
 }
 
 gulp.task("default", build)
+
+
+// ceshi  vscode功能

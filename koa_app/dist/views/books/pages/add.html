@@ -1,13 +1,16 @@
-{% extends './layout.html' %}
+{% extends '../../common/layout.html' %}
 {% block title %}添加书信息{% endblock %}
 {% block head %}
-<link rel="stylesheet" href="/styles/common.css">
+<!-- <link rel="stylesheet" href="/styles/common.css"> -->
+<!-- injectcss -->
 {% endblock %}
 {% block content %}
-{% include './components/news/add.html' %}
+{% include '../../../components/add/add.html' %}
 <!-- <div id="app"></div> -->
 {% endblock %}
 {% block scripts %}
+    <script src=/script/books-add.bundle.js></script>
+
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script type="module">
     // type="module" 判断是或可以模块话加载

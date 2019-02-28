@@ -1,31 +1,44 @@
-'use strict';
+System.register(["path", "lodash"], function (_export, _context) {
+  "use strict";
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+  var join, _;
 
-var path = require('path');
-var _ = _interopDefault(require('lodash'));
+  return {
+    setters: [function (_path) {
+      join = _path.join;
+    }, function (_lodash) {
+      _ = _lodash.default;
+    }],
+    execute: function () {
+      // const { join } = require("path");
+      // const _ = require("lodash");
+      let config = {
+        "viewDir": join(__dirname, "..", "views"),
+        "staticDir": join(__dirname, "..", "assets")
+      };
 
-// const { join } = require("path");
-// const _ = require("lodash");
+      if (process.env.NODE_ENV == "development") {
+        const localConfig = {
+          baseUrl: "http://localhost/web/index.php?r=",
+          catchMode: false,
+          port: 3000
+        };
+        config = _.extend(config, localConfig);
+      }
 
-let config = {
-    "viewDir": path.join(__dirname, "..", "views"),
-    "staticDir": path.join(__dirname, "..", "assets"),
-};
+      if (process.env.NODE_ENV == "production") {
+        const prodConfig = {
+          catchMode: "memory",
+          port: 8081
+        };
+        config = _.extend(config, prodConfig);
+      }
 
-
-{
-    const prodConfig = {
-        catchMode:"memory",
-        port: 8081
-    };
-    config = _.extend(config, prodConfig);
-}
-
-module.exports = config;
-
-// 输出结果： {
-//     viewDir: 'C:\\Users\\Administrator\\Desktop\\hotdoc\\yidengroot\\homework\\week2\\koa_app\\views',
-//     staticDir: 'C:\\Users\\Administrator\\Desktop\\hotdoc\\yidengroot\\homework\\week2\\koa_app\\assets',
-//     port: 3000
-// }
+      module.exports = config; // 输出结果： {
+      //     viewDir: 'C:\\Users\\Administrator\\Desktop\\hotdoc\\yidengroot\\homework\\week2\\koa_app\\views',
+      //     staticDir: 'C:\\Users\\Administrator\\Desktop\\hotdoc\\yidengroot\\homework\\week2\\koa_app\\assets',
+      //     port: 3000
+      // }
+    }
+  };
+});

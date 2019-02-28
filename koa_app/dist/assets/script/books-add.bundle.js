@@ -77,35 +77,36 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/web/views/books/books-list.entry.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/web/views/books/books-add.entry.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/web/components/list/list.js":
-/*!*****************************************!*\
-  !*** ./src/web/components/list/list.js ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/web/components/add/add.js":
+/*!***************************************!*\
+  !*** ./src/web/components/add/add.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module parse failed: Unexpected token (2:10)\\nYou may need an appropriate loader to handle this file type.\\n| import \\\"./list.css\\\";\\n> const list{\\n|     init(){\\n|         console.log(\\\"组建对应的入口文件\\\")\");\n\n//# sourceURL=webpack:///./src/web/components/list/list.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nclass add {\r\n    init() {\r\n        console.log(\"add组建对应的入口文件\")\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (add);\n\n//# sourceURL=webpack:///./src/web/components/add/add.js?");
 
 /***/ }),
 
-/***/ "./src/web/views/books/books-list.entry.js":
-/*!*************************************************!*\
-  !*** ./src/web/views/books/books-list.entry.js ***!
-  \*************************************************/
+/***/ "./src/web/views/books/books-add.entry.js":
+/*!************************************************!*\
+  !*** ./src/web/views/books/books-add.entry.js ***!
+  \************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_list_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/list/list.js */ \"./src/web/components/list/list.js\");\n/* harmony import */ var _components_list_list_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_list_list_js__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n_components_list_list_js__WEBPACK_IMPORTED_MODULE_0___default.a.init();\n\n//# sourceURL=webpack:///./src/web/views/books/books-list.entry.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_add_add_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/add/add.js */ \"./src/web/components/add/add.js\");\n\r\n\r\n\r\n_components_add_add_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/web/views/books/books-add.entry.js?");
 
 /***/ })
 

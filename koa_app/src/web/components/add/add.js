@@ -1,7 +1,5 @@
-import "./add.css";
-
-const add{
-    init(){
+class add {
+    init() {
         console.log("add组建对应的入口文件")
     }
 }
