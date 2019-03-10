@@ -1,5 +1,11 @@
 "use strict";
 
+var _cheerio = require("cheerio");
+
+var _cheerio2 = _interopRequireDefault(_cheerio);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /*jshint esversion: 6 */
 const Index = require("../models/index.js");
 
@@ -16,15 +22,27 @@ class IndexController {
       let index = new Index();
       let res = await index.getData(); // ctx.body = res;
 
-      ctx.body = await ctx.render('books/pages/list.html', {
+      const html = await ctx.render('books/pages/list.html', {
         data: res
       });
+
+      if (ctx.request.header['x-pjax']) {
+        const $ = _cheerio2.default.load(html);
+
+        ctx.body = $("#js-hooks-data").html();
+      } else {
+        ctx.body = html;
+      }
     };
   }
 
   actionAdd() {
     return async (ctx, next) => {
-      ctx.body = await ctx.render('books/pages/add.html', {});
+      if (ctx.request.header['x-pjax']) {
+        ctx.body = "<x-add></x-add>";
+      } else {
+        ctx.body = await ctx.render('books/pages/add.html', {});
+      }
     };
   }
 

@@ -327,3 +327,38 @@
   code: 'ENOENT',
   path:
    '/Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/dist/views/common/components/common/navigation.html' }
+[2019-03-10T23:00:58.022] [ERROR] koa_app - { data:
+   { FetchError: request to http://127.0.0.1:8080/yideng_book/web/index.php?r=book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8080
+       at ClientRequest.<anonymous> (/Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/node_modules/_node-fetch@2.3.0@node-fetch/lib/index.js:1444:11)
+       at ClientRequest.emit (events.js:189:13)
+       at Socket.socketErrorListener (_http_client.js:392:9)
+       at Socket.emit (events.js:189:13)
+       at emitErrorNT (internal/streams/destroy.js:82:8)
+       at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+       at process._tickCallback (internal/process/next_tick.js:63:19)
+     message:
+      'request to http://127.0.0.1:8080/yideng_book/web/index.php?r=book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8080',
+     type: 'system',
+     errno: 'ECONNREFUSED',
+     code: 'ECONNREFUSED' },
+  message: 'fetch error！NODE和后端通信异常',
+  code: 1 }
+[2019-03-10T23:05:34.217] [ERROR] koa_app - { Error: ENOENT: no such file or directory, open '/Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/dist/components/common/navigation.html'
+    at Object.openSync (fs.js:439:3)
+    at Object.readFileSync (fs.js:344:35)
+    at Object.ret.load (/Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/node_modules/_swig-templates@2.0.3@swig-templates/lib/loaders/filesystem.js:59:15)
+    at exports.Swig.compileFile (/Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/node_modules/_swig-templates@2.0.3@swig-templates/lib/swig.js:740:31)
+    at Object.eval [as tpl] (eval at precompile (/Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/node_modules/_swig-templates@2.0.3@swig-templates/lib/swig.js:537:13), <anonymous>:11:18)
+    at compiled (/Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/node_modules/_swig-templates@2.0.3@swig-templates/lib/swig.js:664:18)
+    at /Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/node_modules/_swig-templates@2.0.3@swig-templates/lib/swig.js:604:20
+    at /Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/node_modules/_swig-templates@2.0.3@swig-templates/lib/swig.js:735:9
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path:
+   '/Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/dist/components/common/navigation.html' }
+[2019-03-11T00:30:24.893] [ERROR] koa_app - ReferenceError: cheerio is not defined
+    at /Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/dist/controllers/IndexController.js:24:19
+[2019-03-11T00:35:47.926] [ERROR] koa_app - ReferenceError: cheerio is not defined
+    at /Users/zhangchiyang/Desktop/network/yd_homework_week2/koa_app/dist/controllers/IndexController.js:24:19

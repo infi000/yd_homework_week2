@@ -2,6 +2,7 @@
 
 const Index = require("../models/index.js");
 const { URLSearchParams } = require('url');
+import cheerio from "cheerio";
 class IndexController {
     constructor() {}
     actionIndex() {
@@ -11,15 +12,30 @@ class IndexController {
             let res = await index.getData();
             // ctx.body = res;
 
-            ctx.body = await ctx.render('books/pages/list.html', {
+            const html = await ctx.render('books/pages/list.html', {
                 data: res
             });
+
+            if(ctx.request.header['x-pjax']){
+                const $ =cheerio.load(html);
+                ctx.body=$("#js-hooks-data").html();
+            }else{
+                ctx.body=html;
+            }   
+           
+            
         }
     }
     actionAdd() {
 
         return async(ctx, next) => {
-            ctx.body = await ctx.render('books/pages/add.html', {});
+
+            if(ctx.request.header['x-pjax']){
+             ctx.body="<x-add></x-add>"
+            }else{
+                ctx.body = await ctx.render('books/pages/add.html', {});
+            }   
+           
         }
     }
     actionSave() {

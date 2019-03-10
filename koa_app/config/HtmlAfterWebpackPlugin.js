@@ -15,8 +15,8 @@ const assetsHelp = (data) => {
     //     js.push(dir.js(d));
     // }
 
-    var js = data.js.map((d) => `<script src=${d}></script>`);
-    var css = data.css.map((d) => `<link href=${d}`);
+    var js = data.js.map((d) => `<script class="layload-js" src=${d}></script>`);
+    var css = data.css.map((d) => `<link  class="layload-css"  href=${d}`);
     
     return {
         js,css
